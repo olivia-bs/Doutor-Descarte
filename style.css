@@ -1,0 +1,111 @@
+body {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 18px;
+    background-color: #ffffff;
+    background-image: url('imagens/Fundo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 33px;
+}
+
+.lixeira {
+    width: 165px;
+    height: 220px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.lixeira h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.lixeira#infectante {
+    background-image: url('imagens/Infectante.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lixeira#quimico {
+    background-image: url('imagens/Químico.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lixeira#radioativo {
+    background-image: url('imagens/Radioativo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lixeira#comum {
+    background-image: url('imagens/Comum.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lixeira#perfurocortante {
+    background-image: url('imagens/Perfurocortante.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.itens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.item {
+    width: 85px;
+    height: 85px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score {
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#feedback {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doutor Descarte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="imagens/Doutor D..png" alt="Título"><br>Arraste os itens para as lixeiras corretas!
+    <div class="container">
+        <div class="lixeira" id="infectante" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Infectante</h2>
+        </div>
+        <div class="lixeira" id="quimico" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Químico</h2>
+        </div>
+        <div class="lixeira" id="radioativo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Radioativo</h2>
+        </div>
+        <div class="lixeira" id="comum" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Comum</h2>
+        </div>
+        <div class="lixeira" id="perfurocortante" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Perfurocortante</h2>
+        </div>
+    </div>
+
+    <div class="itens">
+        <div class="item" id="algodao" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/Algodão.png');">
+        </div>
+        <div class="item" id="luvas" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/LUVAS.png');">
+        </div>
+        <div class="item" id="medicamentos" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/Medicamentos.png');">
+        </div>
+        <div class="item" id="reagentes" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/Reagentes.png');">
+        </div>
+        <div class="item" id="residuos_nucleares" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/RESíDUOS\ NUCLEARES.png');">
+        </div>
+        <div class="item" id="maca" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/MAÇÃ.png');">
+        </div>
+        <div class="item" id="papel" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/PAPEL.png');">
+        </div>
+        <div class="item" id="agulha" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/Agulha.png');">
+        </div>
+        <div class="item" id="bisturi" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/BISTURI.png');">
+        </div>
+        <div class="item" id="lixo_radioativo" draggable="true" ondragstart="drag(event)"
+            style="background-image: url('imagens/Lixo\ Radioativo.png');">
+        </div>
+    </div>
+
+    <div id="score">
+        Pontuação: <span id="scoreValue">0</span>
+    </div>
+
+    <div id="feedback" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
